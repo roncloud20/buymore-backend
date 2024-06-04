@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('product_description')->nullable();
             $table->decimal('initial_price', 10, 2);
             $table->decimal('selling_price', 10, 2);
+            $table->decimal('quantity', 10, 2)->default(0);
             $table->string('category');
             $table->string('product_image');
             $table->timestamps();
